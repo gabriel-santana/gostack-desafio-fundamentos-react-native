@@ -44,11 +44,7 @@ const Dashboard: React.FC = () => {
   }, []);
 
   async function handleAddToCart(item: Product): void {
-    try {
-      await addToCart(item);
-    } catch (err) {
-      console.log('deu erro');
-    }
+    await addToCart(item);
   }
 
   return (
